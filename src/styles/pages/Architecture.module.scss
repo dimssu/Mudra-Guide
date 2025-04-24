@@ -1,0 +1,172 @@
+.architecturePage {
+  padding: $spacing-xl 0;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: $spacing-xxl;
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-md;
+    color: $gray-900;
+  }
+}
+
+.subtitle {
+  font-size: $font-size-lg;
+  color: $gray-600;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.architectureDiagram {
+  margin: $spacing-lg 0 $spacing-xl;
+  text-align: center;
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: $border-radius;
+  }
+}
+
+.componentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: $spacing-lg;
+  margin: $spacing-lg 0;
+}
+
+.componentCard {
+  background-color: $white;
+  border-radius: $border-radius;
+  padding: $spacing-lg;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid $primary-color;
+  
+  h3 {
+    color: $primary-color;
+    margin-bottom: $spacing-sm;
+  }
+  
+  p {
+    color: $gray-700;
+    margin-bottom: 0;
+  }
+}
+
+.flowSteps {
+  margin: $spacing-lg 0;
+}
+
+.flowStep {
+  display: flex;
+  margin-bottom: $spacing-lg;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.flowStepNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: $primary-color;
+  color: $white;
+  font-weight: 600;
+  font-size: $font-size-lg;
+  border-radius: 50%;
+  margin-right: $spacing-md;
+  flex-shrink: 0;
+}
+
+.flowStepContent {
+  h3 {
+    margin-bottom: $spacing-xs;
+    color: $gray-900;
+  }
+  
+  p {
+    color: $gray-700;
+  }
+}
+
+.tokenExplanation {
+  background-color: $gray-100;
+  border-radius: $border-radius;
+  padding: $spacing-lg;
+  margin-top: $spacing-lg;
+  
+  h3 {
+    margin-bottom: $spacing-md;
+    color: $gray-900;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    
+    li {
+      margin-bottom: $spacing-sm;
+      padding-left: $spacing-md;
+      position: relative;
+      
+      &:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: $primary-color;
+        font-weight: bold;
+      }
+      
+      strong {
+        color: $gray-900;
+        font-family: $font-family-code;
+        background-color: $gray-200;
+        padding: 0.1em 0.3em;
+        border-radius: $border-radius-sm;
+        margin-right: $spacing-xs;
+      }
+    }
+  }
+}
+
+.securityGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: $spacing-lg;
+  margin: $spacing-lg 0;
+}
+
+.securityCard {
+  background-color: $white;
+  border-radius: $border-radius;
+  padding: $spacing-lg;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid $warning-color;
+  
+  h3 {
+    color: $gray-900;
+    margin-bottom: $spacing-sm;
+  }
+  
+  p {
+    color: $gray-700;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .flowStep {
+    flex-direction: column;
+  }
+  
+  .flowStepNumber {
+    margin-bottom: $spacing-sm;
+  }
+} 

@@ -1,0 +1,239 @@
+.homePage {
+    overflow-x: hidden;
+  }
+  
+  .hero {
+    padding: $spacing-xxl 0;
+    background: linear-gradient(135deg, lighten($primary-color, 30%), lighten($primary-color, 40%));
+    
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: $spacing-xl;
+    }
+  }
+  
+  .heroContent {
+    flex: 1;
+    
+    h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: $spacing-lg;
+      color: $gray-900;
+    }
+  }
+  
+  .heroSubtitle {
+    font-size: $font-size-xl;
+    color: $gray-700;
+    margin-bottom: $spacing-xl;
+    max-width: 600px;
+  }
+  
+  .heroCta {
+    display: flex;
+    gap: $spacing-md;
+    
+    a {
+      padding: $spacing-md $spacing-xl;
+      font-weight: 600;
+    }
+  }
+  
+  .heroImage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  .sectionTitle {
+    text-align: center;
+    margin-bottom: $spacing-xl;
+    font-size: 2.25rem;
+    color: $gray-900;
+  }
+  
+  .features {
+    padding: $spacing-xxl 0;
+    background-color: $white;
+  }
+  
+  .featureGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: $spacing-lg;
+  }
+  
+  .featureCard {
+    background-color: $white;
+    border-radius: $border-radius-lg;
+    padding: $spacing-xl;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    transition: $transition-base;
+    text-align: center;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    h3 {
+      margin: $spacing-md 0;
+      color: $gray-900;
+    }
+    
+    p {
+      color: $gray-700;
+      line-height: 1.6;
+    }
+  }
+  
+  .featureIcon {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-md;
+  }
+  
+  .getStarted {
+    padding: $spacing-xxl 0;
+    background-color: $gray-100;
+  }
+  
+  .stepsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: $spacing-xl;
+    margin-bottom: $spacing-xl;
+  }
+  
+  .step {
+    background-color: $white;
+    border-radius: $border-radius-lg;
+    padding: $spacing-xl;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    
+    h3 {
+      margin: $spacing-lg 0 $spacing-md;
+      color: $gray-900;
+    }
+    
+    p {
+      color: $gray-700;
+      line-height: 1.6;
+    }
+  }
+  
+  .stepNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: $primary-color;
+    color: $white;
+    font-weight: 600;
+    font-size: $font-size-lg;
+    border-radius: 50%;
+  }
+  
+  .getStartedCta {
+    text-align: center;
+    margin-top: $spacing-xl;
+    
+    a {
+      padding: $spacing-md $spacing-xl;
+      font-weight: 600;
+    }
+  }
+  
+  .testimonials {
+    padding: $spacing-xxl 0;
+    background-color: $white;
+  }
+  
+  .testimonialGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: $spacing-xl;
+  }
+  
+  .testimonialCard {
+    background-color: $gray-100;
+    border-radius: $border-radius-lg;
+    padding: $spacing-xl;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    
+    p {
+      font-size: $font-size-lg;
+      line-height: 1.6;
+      color: $gray-800;
+      font-style: italic;
+      margin-bottom: $spacing-lg;
+      position: relative;
+      
+      &::before {
+        content: '"';
+        font-size: 4rem;
+        color: $gray-300;
+        position: absolute;
+        top: -20px;
+        left: -10px;
+        z-index: 0;
+        opacity: 0.5;
+      }
+    }
+  }
+  
+  .testimonialAuthor {
+    display: flex;
+    flex-direction: column;
+    
+    strong {
+      color: $gray-900;
+      font-size: $font-size-base;
+    }
+    
+    span {
+      color: $gray-600;
+      font-size: $font-size-sm;
+    }
+  }
+  
+  @media (max-width: $breakpoint-lg) {
+    .hero .container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .heroContent {
+      order: 1;
+    }
+    
+    .heroImage {
+      order: 0;
+      margin-bottom: $spacing-xl;
+    }
+    
+    .heroCta {
+      justify-content: center;
+    }
+    
+    .heroSubtitle {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media (max-width: $breakpoint-md) {
+    .testimonialGrid {
+      grid-template-columns: 1fr;
+    }
+  }

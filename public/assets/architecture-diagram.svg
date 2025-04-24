@@ -1,0 +1,75 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="10" fill="#F8F9FA"/>
+  
+  <!-- Client Applications -->
+  <rect x="50" y="100" width="120" height="80" rx="5" fill="#E9ECEF" stroke="#ADB5BD" stroke-width="2"/>
+  <text x="110" y="145" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529">Web App</text>
+  
+  <rect x="50" y="200" width="120" height="80" rx="5" fill="#E9ECEF" stroke="#ADB5BD" stroke-width="2"/>
+  <text x="110" y="245" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529">Mobile App</text>
+  
+  <rect x="50" y="300" width="120" height="80" rx="5" fill="#E9ECEF" stroke="#ADB5BD" stroke-width="2"/>
+  <text x="110" y="345" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529">API Client</text>
+  
+  <!-- Mudra SSO Gateway -->
+  <rect x="250" y="150" width="150" height="180" rx="5" fill="#4A6CF7" stroke="#3A5CE5" stroke-width="2"/>
+  <text x="325" y="200" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Mudra SSO</text>
+  <text x="325" y="220" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Gateway</text>
+  <rect x="275" y="240" width="100" height="30" rx="5" fill="white" stroke="#3A5CE5" stroke-width="1"/>
+  <text x="325" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="#4A6CF7">Auth Service</text>
+  <rect x="275" y="280" width="100" height="30" rx="5" fill="white" stroke="#3A5CE5" stroke-width="1"/>
+  <text x="325" y="300" font-family="Arial" font-size="12" text-anchor="middle" fill="#4A6CF7">Token Service</text>
+  
+  <!-- Microservices -->
+  <rect x="480" y="80" width="120" height="80" rx="5" fill="#FF9F43" stroke="#F08C1A" stroke-width="2"/>
+  <text x="540" y="125" font-family="Arial" font-size="14" text-anchor="middle" fill="white">User Service</text>
+  
+  <rect x="480" y="180" width="120" height="80" rx="5" fill="#FF9F43" stroke="#F08C1A" stroke-width="2"/>
+  <text x="540" y="225" font-family="Arial" font-size="14" text-anchor="middle" fill="white">App Registry</text>
+  
+  <rect x="480" y="280" width="120" height="80" rx="5" fill="#FF9F43" stroke="#F08C1A" stroke-width="2"/>
+  <text x="540" y="325" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Audit Service</text>
+  
+  <!-- Databases -->
+  <ellipse cx="680" cy="120" rx="70" ry="40" fill="#28A745" stroke="#1E7E34" stroke-width="2"/>
+  <text x="680" y="125" font-family="Arial" font-size="14" text-anchor="middle" fill="white">User DB</text>
+  
+  <ellipse cx="680" cy="220" rx="70" ry="40" fill="#28A745" stroke="#1E7E34" stroke-width="2"/>
+  <text x="680" y="225" font-family="Arial" font-size="14" text-anchor="middle" fill="white">App Registry DB</text>
+  
+  <ellipse cx="680" cy="320" rx="70" ry="40" fill="#28A745" stroke="#1E7E34" stroke-width="2"/>
+  <text x="680" y="325" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Audit Logs</text>
+  
+  <!-- Redis Cache -->
+  <rect x="480" y="380" width="120" height="80" rx="5" fill="#17A2B8" stroke="#138496" stroke-width="2"/>
+  <text x="540" y="425" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Redis Cache</text>
+  
+  <!-- Connection Lines -->
+  <!-- Client to Gateway -->
+  <path d="M170 140L250 200" stroke="#ADB5BD" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M170 240L250 240" stroke="#ADB5BD" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M170 340L250 280" stroke="#ADB5BD" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Gateway to Microservices -->
+  <path d="M400 200L480 120" stroke="#ADB5BD" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M400 240L480 220" stroke="#ADB5BD" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M400 280L480 320" stroke="#ADB5BD" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M325 330L480 420" stroke="#ADB5BD" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Microservices to Databases -->
+  <path d="M600 120L610 120" stroke="#ADB5BD" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M600 220L610 220" stroke="#ADB5BD" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M600 320L610 320" stroke="#ADB5BD" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Arrow Marker Definition -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5"
+        markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ADB5BD"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#212529">Mudra SSO Architecture</text>
+</svg> 
