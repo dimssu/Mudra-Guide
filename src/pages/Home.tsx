@@ -45,7 +45,7 @@ const Home: React.FC = () => {
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>🛠️</div>
               <h3>Easy Integration</h3>
-              <p>Simple APIs and SDKs for quick implementation across various platforms.</p>
+              <p>Simple Apis and SDKs for quick implementation across various platforms.</p>
             </div>
           </div>
         </div>
@@ -62,8 +62,8 @@ const Home: React.FC = () => {
             </div>
             <div className={styles.step}>
               <div className={styles.stepNumber}>2</div>
-              <h3>Integrate the APIs</h3>
-              <p>Add the Mudra APIs to your application for easy authentication and authorization.</p>
+              <h3>Integrate the Apis</h3>
+              <p>Add the Mudra Apis to your application for easy authentication and authorization.</p>
             </div>
             <div className={styles.step}>
               <div className={styles.stepNumber}>3</div>

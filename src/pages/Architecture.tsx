@@ -13,7 +13,7 @@ const Architecture: React.FC = () => {
         </section>
 
         <section className="section">
-          <h2>System Architecture APIs</h2>
+          <h2>System Architecture Apis</h2>
           <div className={styles.architectureDiagram}>
             <img src="/assets/architecture-diagram.svg" alt="Mudra SSO Architecture Diagram" />
           </div>

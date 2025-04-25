@@ -4,7 +4,7 @@ import styles from '@/styles/pages/apis.module.scss';
 
 type ApiKey = 'register' | 'login' | 'refresh-token' | 'logout' | 'verify-token';
 
-const APIs: React.FC = () => {
+const Apis: React.FC = () => {
   const [selectedApi, setSelectedApi] = useState<ApiKey>('register');
   const [copySuccess, setCopySuccess] = useState<string | null>(null);
 
@@ -173,4 +173,4 @@ const APIs: React.FC = () => {
   );
 };
 
-export default APIs; 
+export default Apis; 
