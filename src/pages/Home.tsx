@@ -77,7 +77,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className={styles.testimonials}>
+      {/* <section className={styles.testimonials}>
         <div className="container">
           <h2 className={styles.sectionTitle}>Trusted by Developers</h2>
           <div className={styles.testimonialGrid}>
@@ -97,7 +97,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
