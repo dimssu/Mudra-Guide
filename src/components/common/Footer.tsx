@@ -29,8 +29,8 @@ const Footer: React.FC = () => {
             <ul>
               <li><Link to="/apis">Apis</Link></li>
               <li><Link to="/troubleshooting">Troubleshooting</Link></li>
-              <li><a href="https://github.com/mudra-sso" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-              <li><a href="https://mudra-sso.slack.com" target="_blank" rel="noopener noreferrer">Community</a></li>
+              <li><a href="https://github.com/dimssu/Mudra-Guide/tree/main" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              {/* <li><a href="https://mudra-sso.slack.com" target="_blank" rel="noopener noreferrer">Community</a></li> */}
             </ul>
           </div>
         </div>
