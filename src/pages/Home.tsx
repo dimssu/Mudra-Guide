@@ -14,7 +14,7 @@ const Home: React.FC = () => {
             </p>
             <div className={styles.heroCta}>
               <Link to="/integration" className="btn btn-primary">Start Integration</Link>
-              <Link to="/api-playground" className="btn btn-outline-primary">Try API</Link>
+              <Link to="/apis-playground" className="btn btn-outline-primary">Try API</Link>
             </div>
           </div>
           <div className={styles.heroImage}>
@@ -71,9 +71,9 @@ const Home: React.FC = () => {
               <p>Set up authentication flows and customize the login experience for your users.</p>
             </div>
           </div>
-          <div className={styles.getStartedCta}>
+          {/* <div className={styles.getStartedCta}>
             <Link to="/prerequisites" className="btn btn-primary">View Prerequisites</Link>
-          </div>
+          </div> */}
         </div>
       </section>
 

@@ -14,7 +14,7 @@ const Architecture: React.FC = () => {
         </section>
 
         <section className="section">
-          <h2>System Architecture Overview</h2>
+          <h2>System Architecture APIs</h2>
           <div className={styles.architectureDiagram}>
             <img src="/assets/architecture-diagram.svg" alt="Mudra SSO Architecture Diagram" />
           </div>
@@ -87,7 +87,7 @@ const Architecture: React.FC = () => {
           </div>
         </section>
 
-        <section className="section">
+        {/* <section className="section">
           <h2>JWT Token Structure</h2>
           <p>
             Mudra SSO uses JSON Web Tokens (JWT) for secure authentication. A JWT consists of three parts: header, payload, and signature.
@@ -133,7 +133,7 @@ HMACSHA256(
               <li><strong>iss</strong>: Issuer (Mudra SSO server URL)</li>
             </ul>
           </div>
-        </section>
+        </section> */}
 
         <section className="section">
           <h2>Security Considerations</h2>

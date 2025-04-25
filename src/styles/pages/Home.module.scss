@@ -39,6 +39,10 @@
     a {
       padding: $spacing-md $spacing-xl;
       font-weight: 600;
+      
+      &:hover {
+        color: $white;
+      }
     }
   }
   

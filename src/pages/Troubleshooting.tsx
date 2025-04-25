@@ -18,7 +18,7 @@ const Troubleshooting: React.FC = () => {
             The troubleshooting guide is currently under development. Please check back soon for solutions to common issues you might encounter when integrating Mudra SSO.
           </p>
           <p>
-            In the meantime, you can explore the <a href="/overview">Overview</a> and <a href="/architecture">Architecture</a> sections to understand how Mudra SSO works.
+            In the meantime, you can explore the <a href="/apis">APIs</a> and <a href="/architecture">Architecture</a> sections to understand how Mudra SSO works.
           </p>
         </section>
       </div>
