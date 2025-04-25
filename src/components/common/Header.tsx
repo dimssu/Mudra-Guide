@@ -20,7 +20,7 @@ const Header: React.FC = () => {
           <Link to="/" className={`${styles.navLink} ${isActive('/')}`}>Home</Link>
           <Link to="/apis" className={`${styles.navLink} ${isActive('/apis')}`}>Apis</Link>
           <Link to="/architecture" className={`${styles.navLink} ${isActive('/architecture')}`}>Architecture</Link>
-          <Link to="/troubleshooting" className={`${styles.navLink} ${isActive('/troubleshooting')}`}>Troubleshooting</Link>
+          {/* <Link to="/troubleshooting" className={`${styles.navLink} ${isActive('/troubleshooting')}`}>Troubleshooting</Link> */}
         </nav>
       </div>
     </header>
