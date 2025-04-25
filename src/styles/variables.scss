@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Brand Colors
 $primary-color: #4a6cf7; // Mudra primary blue
 $secondary-color: #6c757d;
@@ -64,4 +66,12 @@ $z-index-popover: 1060;
 $z-index-tooltip: 1070;
 
 // Transitions
-$transition-base: all 0.2s ease-in-out; 
+$transition-base: all 0.2s ease-in-out;
+
+@function darken($color, $amount) {
+  @return color.scale($color, $lightness: -$amount);
+}
+
+@function lighten($color, $amount) {
+  @return color.scale($color, $lightness: $amount);
+} 

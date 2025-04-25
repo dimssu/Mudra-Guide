@@ -1,5 +1,4 @@
 import React from 'react';
-import CodeBlock from '@/components/common/CodeBlock';
 import styles from '@/styles/pages/Architecture.module.scss';
 
 const Architecture: React.FC = () => {

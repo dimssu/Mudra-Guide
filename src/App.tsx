@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Architecture from './pages/Architecture';
 import Troubleshooting from './pages/Troubleshooting';
 import './styles/global.scss';
-import APIs from './pages/apis';
+import APIs from './pages/APIs';
 
 const App: React.FC = () => {
   return (

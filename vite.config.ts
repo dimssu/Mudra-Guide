@@ -13,8 +13,19 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@/styles/variables.scss";`
+        additionalData: `@use "@/styles/variables.scss" as *;`,
+        quietDeps: true
       }
+    },
+    devSourcemap: false,
+    postcss: {
+      plugins: []
     }
+  },
+  build: {
+    cssCodeSplit: true,
+    cssMinify: true,
+    reportCompressedSize: false,
+    sourcemap: false
   }
 })
