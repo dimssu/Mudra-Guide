@@ -18,7 +18,7 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div className={styles.heroImage}>
-            <img src="/assets/hero-illustration.svg" alt="Mudra SSO Illustration" />
+          <img src="/assets/hero-illustration.svg" alt="Mudra SSO Illustration" />
           </div>
         </div>
       </section>

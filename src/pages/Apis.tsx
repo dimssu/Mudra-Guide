@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import CodeBlock from '@/components/common/CodeBlock';
-import styles from '@/styles/pages/apis.module.scss';
+import styles from '@/styles/pages/Apis.module.scss';
 
 type ApiKey = 'register' | 'login' | 'refresh-token' | 'logout' | 'verify-token';
 

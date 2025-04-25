@@ -4,7 +4,7 @@
   
   .hero {
     padding: $spacing-xxl 0;
-    background: linear-gradient(135deg, lighten($primary-color, 30%), lighten($primary-color, 40%));
+    background: linear-gradient(135deg, rgba($primary-color, 0.5), rgba($primary-color, 0.05));
     
     .container {
       display: flex;
