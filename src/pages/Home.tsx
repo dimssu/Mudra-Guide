@@ -13,8 +13,8 @@ const Home: React.FC = () => {
               Mudra SSO provides a seamless Single Sign-On experience for your users across all your applications.
             </p>
             <div className={styles.heroCta}>
-              <Link to="/integration" className="btn btn-primary">Start Integration</Link>
-              <Link to="/apis-playground" className="btn btn-outline-primary">Try API</Link>
+              <Link to="/apis" className="btn btn-primary">Start Integration</Link>
+              {/* <Link to="/apis" className="btn btn-outline-primary">Try API</Link> */}
             </div>
           </div>
           <div className={styles.heroImage}>
