@@ -21,7 +21,7 @@ const Apis: React.FC = () => {
     register: {
       title: 'Register',
       description: 'Register a new user account in the Mudra SSO system.',
-      curl: `curl -X POST https://api.mudra-sso.com/v1/auth/register \\
+      curl: `curl -X POST http://mudra.dimssu.com/mudra/auth/register \\
   -H "Content-Type: application/json" \\
   -d '{
     "email": "user@example.com",
@@ -33,7 +33,7 @@ const Apis: React.FC = () => {
     login: {
       title: 'Login',
       description: 'Authenticate a user and receive access and refresh tokens.',
-      curl: `curl -X POST https://api.mudra-sso.com/v1/auth/login \\
+      curl: `curl -X POST http://mudra.dimssu.com/mudra/auth/login \\
   -H "Content-Type: application/json" \\
   -d '{
     "email": "user@example.com",
@@ -43,7 +43,7 @@ const Apis: React.FC = () => {
     'refresh-token': {
       title: 'Refresh Token',
       description: 'Get a new access token using a valid refresh token.',
-      curl: `curl -X POST https://api.mudra-sso.com/v1/auth/refresh-token \\
+      curl: `curl -X POST http://mudra.dimssu.com/mudra/auth/refresh-token \\
   -H "Content-Type: application/json" \\
   -d '{
     "refreshToken": "YOUR_REFRESH_TOKEN"
@@ -52,14 +52,14 @@ const Apis: React.FC = () => {
     logout: {
       title: 'Logout',
       description: 'Invalidate the current session and revoke tokens.',
-      curl: `curl -X POST https://api.mudra-sso.com/v1/auth/logout \\
+      curl: `curl -X POST http://mudra.dimssu.com/mudra/auth/logout \\
   -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \\
   -H "Content-Type: application/json"`
     },
     'verify-token': {
       title: 'Verify Token',
       description: 'Validate an access token and get user information.',
-      curl: `curl -X POST https://api.mudra-sso.com/v1/auth/verify-token \\
+      curl: `curl -X POST http://mudra.dimssu.com/mudra/auth/verify-token \\
   -H "Content-Type: application/json" \\
   -d '{
     "token": "YOUR_ACCESS_TOKEN"
