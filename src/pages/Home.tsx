@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaLock, FaUsers, FaCogs, FaSyncAlt } from 'react-icons/fa';
+import { FaLock, FaUsers, FaCogs } from 'react-icons/fa';
 import styles from '@/styles/pages/Home.module.scss';
 
 const featureList = [
@@ -26,18 +26,18 @@ const featureList = [
   }
 ];
 
-const testimonials = [
-  {
-    quote: 'Implementing Mudra SSO cut our authentication development time by 70%. The documentation is clear and the API is intuitive.',
-    author: 'Sarah Chen',
-    role: 'Lead Developer, TechCorp'
-  },
-  {
-    quote: 'Our users love the seamless login experience across all our applications. Mudra SSO has significantly improved our user retention.',
-    author: 'Michael Rodriguez',
-    role: 'CTO, AppWorks'
-  }
-];
+// const testimonials = [
+//   {
+//     quote: 'Implementing Mudra SSO cut our authentication development time by 70%. The documentation is clear and the API is intuitive.',
+//     author: 'Sarah Chen',
+//     role: 'Lead Developer, TechCorp'
+//   },
+//   {
+//     quote: 'Our users love the seamless login experience across all our applications. Mudra SSO has significantly improved our user retention.',
+//     author: 'Michael Rodriguez',
+//     role: 'CTO, AppWorks'
+//   }
+// ];
 
 const Home: React.FC = () => {
   return (
