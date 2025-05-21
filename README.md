@@ -1,54 +1,27 @@
-# React + TypeScript + Vite
+# Mudra Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mudra Guide provides comprehensive integration instructions for Mudra, a secure and scalable SSO microservice designed to generate and validate JWT tokens across your ecosystem. This guide helps developers seamlessly implement robust authentication using Mudra in distributed applications.
 
-Currently, two official plugins are available:
+## Features
+- Step-by-step integration guide for Mudra SSO microservice
+- Secure JWT token generation and validation
+- Scalable and robust authentication for distributed systems
+- Best practices and troubleshooting tips
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
+1. Clone this repository:
+   ```bash
+   git clone <repository-url>
+   cd Mudra-Guide
+   ```
+2. Follow the integration steps outlined in this guide to connect your applications with the Mudra SSO microservice.
 
-## Expanding the ESLint configuration
+## Usage
+- Refer to the relevant sections for integrating Mudra with your backend and frontend services.
+- Use the provided code samples and configuration tips for seamless JWT authentication.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Contributing
+Contributions are welcome! Please open issues or submit pull requests for improvements, additional examples, or corrections.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## License
+This project is licensed under the MIT License.
